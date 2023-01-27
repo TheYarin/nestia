@@ -43,13 +43,13 @@ async function main(): Promise<void> {
         console.log(
             "---------------------------------------------------------",
         );
-        // await execute("176", job, get_arguments("directory", job));
+        await execute("176", job, get_arguments("directory", job));
         await execute("encrypted", job, get_arguments("directory", job));
-        // await execute("generic", job, get_arguments("directory", job));
-        // await execute("recursive", job, get_arguments("pattern", job));
-        // await execute("safe", job, get_arguments("directory", job));
-        // await execute("union", job, get_arguments("directory", job));
-        // await execute("multiple-paths", job, get_arguments("directory", job));
+        await execute("generic", job, get_arguments("directory", job));
+        await execute("recursive", job, get_arguments("pattern", job));
+        await execute("safe", job, get_arguments("directory", job));
+        await execute("union", job, get_arguments("directory", job));
+        await execute("multiple-paths", job, get_arguments("directory", job));
     }
 }
 main().catch((exp) => {
